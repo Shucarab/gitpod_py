@@ -13,7 +13,7 @@ tasks:
   - name: Setup
     init: |
       pip install -e .
-      pip install -r backend/requirements.txt
+      pip install -r requirements.txt
       docker-compose up -d
       gp sync-done setup
   - name: Webserver
